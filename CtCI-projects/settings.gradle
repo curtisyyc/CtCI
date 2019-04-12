@@ -1,0 +1,4 @@
+rootProject.name = 'CtCI-projects'
+include 'Library'
+include 'Chapter1'
+include 'Chapter2'

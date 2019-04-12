@@ -1,0 +1,21 @@
+allprojects {
+    task hello {
+        doLast { task ->
+            println "I'm $task.project.name"
+        }
+    }
+    
+    apply plugin: 'java'
+	group = 'com.yyc.practice'
+    version = '1.0'
+
+	repositories {
+	    jcenter()
+	}
+	
+	dependencies {
+	    compile 'org.slf4j:slf4j-api:1.7.21'
+	    testCompile 'junit:junit:4.12'
+	}
+}
+
