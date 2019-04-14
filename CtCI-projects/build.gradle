@@ -6,6 +6,7 @@ allprojects {
     }
     
     apply plugin: 'java'
+    apply plugin: 'eclipse'
 	group = 'com.yyc.practice'
     version = '1.0'
 

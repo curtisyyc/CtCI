@@ -51,6 +51,12 @@ public class LinkedListNode {
 		return head2;
 	}
 	
+	/**
+	 * This method is not in original code base.
+	 * @param other
+	 * @return
+	 * @author YYC
+	 */
 	public boolean equals(LinkedListNode other) {
 		
 		if(this == other){

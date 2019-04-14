@@ -185,45 +185,45 @@ public class AssortedMethods {
 		return buffer.toString();
 	}
 
-//	public static TreeNode randomBST(int N, int min, int max) {
-//		int d = randomIntInRange(min, max);
-//		TreeNode root = new TreeNode(d);
-//		for (int i = 1; i < N; i++) {
-//			root.insertInOrder(randomIntInRange(min, max));
-//		}
-//		return root;
-//	}
-//
-//	/* Creates tree by mapping the array left to right, top to bottom. */
-//	public static TreeNode createTreeFromArray(int[] array) {
-//		if (array.length > 0) {
-//			TreeNode root = new TreeNode(array[0]);
-//			java.util.Queue<TreeNode> queue = new java.util.LinkedList<TreeNode>();
-//			queue.add(root);
-//			boolean done = false;
-//			int i = 1;
-//			while (!done) {
-//				TreeNode r = (TreeNode) queue.element();
-//				if (r.left == null) {
-//					r.left = new TreeNode(array[i]);
-//					i++;
-//					queue.add(r.left);
-//				} else if (r.right == null) {
-//					r.right = new TreeNode(array[i]);
-//					i++;
-//					queue.add(r.right);
-//				} else {
-//					queue.remove();
-//				}
-//				if (i == array.length) {
-//					done = true;
-//				}
-//			}
-//			return root;
-//		} else {
-//			return null;
-//		}
-//	}
+	public static TreeNode randomBST(int N, int min, int max) {
+		int d = randomIntInRange(min, max);
+		TreeNode root = new TreeNode(d);
+		for (int i = 1; i < N; i++) {
+			root.insertInOrder(randomIntInRange(min, max));
+		}
+		return root;
+	}
+
+	/* Creates tree by mapping the array left to right, top to bottom. */
+	public static TreeNode createTreeFromArray(int[] array) {
+		if (array.length > 0) {
+			TreeNode root = new TreeNode(array[0]);
+			java.util.Queue<TreeNode> queue = new java.util.LinkedList<TreeNode>();
+			queue.add(root);
+			boolean done = false;
+			int i = 1;
+			while (!done) {
+				TreeNode r = (TreeNode) queue.element();
+				if (r.left == null) {
+					r.left = new TreeNode(array[i]);
+					i++;
+					queue.add(r.left);
+				} else if (r.right == null) {
+					r.right = new TreeNode(array[i]);
+					i++;
+					queue.add(r.right);
+				} else {
+					queue.remove();
+				}
+				if (i == array.length) {
+					done = true;
+				}
+			}
+			return root;
+		} else {
+			return null;
+		}
+	}
 
 	public static String getLongTextBlob() {
 		String book = "As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit. "
@@ -238,9 +238,9 @@ public class AssortedMethods {
 		return getLongTextBlob().split(" ");
 	}
 
-//	public static Trie getTrieDictionary() {
-//		return new Trie(getListOfWords());
-//	}
+	public static Trie getTrieDictionary() {
+		return new Trie(getListOfWords());
+	}
 	
 	public static HashSet<String> getWordListAsHashSet() {
 		String[] wordList = getListOfWords();
