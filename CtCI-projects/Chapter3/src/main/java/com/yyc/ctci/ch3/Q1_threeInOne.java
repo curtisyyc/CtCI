@@ -7,8 +7,8 @@ package com.yyc.ctci.ch3;
  * A stack uses LIFO (last-in first-out) ordering.<br>
  * It uses the following operations:
  * <ul>
+ * 		<li>push(item): Add an item to the top of the stack.</li>
  * 		<li>pop(): Remove the top item from the stack.</li>
- * 		<li>push(item): Add an item to the top of the statck.</li>
  * 		<li>peek(): Return the top of the stack.</li>
  * 		<li>isEmpty(): Return true if and only if the stack is empty.</li>
  * </ul> 
