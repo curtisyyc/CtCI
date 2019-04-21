@@ -1,9 +1,7 @@
 package com.yyc.ctci.ch3.q6;
 
 import java.util.LinkedList;
-import java.util.Map;
 
-import com.yyc.ctci.library.AssortedMethods;
 
 /**
  * An animal shelter, which holds only dogs and cats, operates on a strictly "first in,
