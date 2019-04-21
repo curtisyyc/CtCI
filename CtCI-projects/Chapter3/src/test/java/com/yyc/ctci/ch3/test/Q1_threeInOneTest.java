@@ -4,7 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.yyc.ctci.ch3.Q1_threeInOne;
+import com.yyc.ctci.ch3.q1.Q1_threeInOne;
 import com.yyc.ctci.library.AssortedMethods;
 
 public class Q1_threeInOneTest {

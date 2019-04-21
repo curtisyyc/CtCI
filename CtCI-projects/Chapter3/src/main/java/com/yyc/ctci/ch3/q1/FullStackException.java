@@ -1,4 +1,4 @@
-package com.yyc.ctci.ch3;
+package com.yyc.ctci.ch3.q1;
 
 public class FullStackException extends RuntimeException {
 

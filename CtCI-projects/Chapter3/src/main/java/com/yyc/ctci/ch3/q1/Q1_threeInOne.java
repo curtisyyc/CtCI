@@ -1,4 +1,4 @@
-package com.yyc.ctci.ch3;
+package com.yyc.ctci.ch3.q1;
 
 /**
  * Describe how you could use a single array to implement three stacks.<br><br>
