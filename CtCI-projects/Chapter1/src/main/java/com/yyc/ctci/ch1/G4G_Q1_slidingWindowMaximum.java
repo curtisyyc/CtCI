@@ -9,5 +9,23 @@ package com.yyc.ctci.ch1;
  *
  */
 public class G4G_Q1_slidingWindowMaximum {
-
+	
+	public static int[] slidingWinMax(int[] array, int windowSize){
+		int n = array.length;
+		int s = windowSize;
+		int[] maxs = new int[n-s+1];
+		int max = Integer.MIN_VALUE;
+		
+		for(int i = 0; i < n-s+1; i++){
+			max = array[i];
+			for(int j = 1; j < s; j++){
+				if(array[i+j] > max){
+					max = array[i+j];
+				}
+			}
+			maxs[i] = max;
+		}
+		
+		return maxs;
+	}
 }
